@@ -4,7 +4,7 @@ dependencies {
 	api(project(":spring-context"))
 	api(project(":spring-core"))
 	api(project(":spring-web"))
-	optional(project(":spring-messaging"))
+	api(project(":spring-messaging"))
 	optional(project(":spring-webmvc"))
 	optional("javax.servlet:javax.servlet-api")
 	optional("javax.websocket:javax.websocket-api")
