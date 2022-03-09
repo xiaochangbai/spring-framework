@@ -7,7 +7,10 @@ import org.springframework.stereotype.Service;
 @Service
 @Scope("singleton")
 public class UserServiceImpl implements IUserService {
-	public UserServiceImpl() {
-		System.out.println(this.getClass().getSimpleName() + " 构造函数执行...");
+
+	@Override
+	public String sayHello(String name) {
+		return String.format("Hello,%s",name);
 	}
+
 }

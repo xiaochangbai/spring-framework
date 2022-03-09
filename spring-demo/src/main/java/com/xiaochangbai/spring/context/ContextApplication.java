@@ -11,7 +11,7 @@ public class ContextApplication {
 				ContextConfig.class
 		);
 		IUserService bean = context.getBean(IUserService.class);
-		System.out.println(bean);
+		System.out.println(bean.sayHello("XiaoChangBai"));
 	}
 
 }
