@@ -10,9 +10,11 @@ repositories {
 }
 
 dependencies {
-//    testCompile group: 'junit', name: 'junit', version: '4.12'
     api(project(":spring-context"))
     api(project(":spring-instrument"))
+    api(project(":spring-aop"))
+    implementation("aspectj:aspectjrt:1.5.4")
+    runtimeOnly("org.aspectj:aspectjweaver:1.9.8")
 }
 
 test {
